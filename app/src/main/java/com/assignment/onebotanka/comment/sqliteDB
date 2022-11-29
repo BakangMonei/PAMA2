@@ -1,0 +1,25 @@
+SigningUp
+// Database constructor
+        DAO databaseConnection = new DAO(this);
+// To database
+                    databaseConnection.addNewUser(email, firstName, lastName, gender, address, DOB, phoneNumber, password, rePassword);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(signUp.this);
+                    builder.setCancelable(true);
+                    builder.setTitle("Successfully Added");
+                    builder.setMessage("New User Has Been Successfully Added");
+                    builder.show();
+
+
+
+LogIn
+DAO DatabaseConnection = new DAO(loginPage.this);
+boolean isExist = DatabaseConnection.checkUserExist(logInEditText.getText().toString(), passwordEditText.getText().toString());
+
+                if(isExist){
+                    Intent intent = new Intent(loginPage.this, SuccessfulLogin.class);
+                    intent.putExtra("username", logInEditText.getText().toString());
+                    startActivity(intent);
+                } else {
+                    passwordEditText.setText(null);
+                    Toast.makeText(loginPage.this, "Login failed. Invalid username or password.", Toast.LENGTH_SHORT).show();
+                }

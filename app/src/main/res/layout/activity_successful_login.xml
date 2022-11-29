@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessfulLogin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/profileTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/ic_baseline_person_outline_24" />
+
+            <TextView
+                android:id="@+id/mainMenuTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Main menu"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/phoneCallImageView"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/phone_call" />
+
+            <TextView
+                android:id="@+id/CallTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Call"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/emailImageView"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/email_image" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Email"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/smsImageView"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/sms_image" />
+
+            <TextView
+                android:id="@+id/smsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send SMS"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/webBrowserImageView"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/web_browser" />
+
+            <TextView
+                android:id="@+id/webBrowserTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web Browser"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/settingsImageView"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/settings" />
+
+            <TextView
+                android:id="@+id/settingsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/helpImageView"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/help_image" />
+
+            <TextView
+                android:id="@+id/helpTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
